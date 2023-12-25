@@ -13,7 +13,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoSearchOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import AccountDropDown from './AccountDropDown';
-const Home = ({singleAdd,handlerFuntion,searching,refresh,setRefresh,refresh1,setRefresh1,counter}) => {
+const Home = ({userID,singleAdd,handlerFuntion,searching,refresh,setRefresh,refresh1,setRefresh1,counter}) => {
 
 
   const addCart=(obj)=>{
@@ -111,7 +111,7 @@ const[showAcc,setShowAcc]=useState(false)
            </div>
           
             <hr id="hr-unique" className=' rotate-90 w-96 absolute top-16 text-gray-300'/>
-<FlashSales refresh1={refresh1} setRefresh1={setRefresh1} refresh={refresh} setRefresh={setRefresh}  products={flash} addCart={addCart} singleAdd={singleAdd} />
+<FlashSales userID={userID} refresh1={refresh1} setRefresh1={setRefresh1} refresh={refresh} setRefresh={setRefresh}  products={flash} addCart={addCart} singleAdd={singleAdd} />
 <BrowseCategory  handlerFuntion={handlerFuntion}/>
 <BestSellingProducts refresh={refresh} setRefresh={setRefresh}/>
 <ExploreProd products={exp} />

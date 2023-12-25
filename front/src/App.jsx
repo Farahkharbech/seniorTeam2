@@ -174,7 +174,7 @@ const searching=(inp)=>{
 
         <Route path='/AllProducts' element={<AllProducts All={All} singleAdd={singleAdd}/>}></Route>
         <Route path='/seller' element={<SellerInterface/>}></Route>
-        <Route path='/addforsale' element={<AddForSale/>}></Route>
+        <Route path='/addforsale' element={<AddForSale userID={userID}/>}></Route>
         <Route path='/contactAdmin' element={<ContactAdmin/>}></Route>
         <Route path='/allmysales' element={<AllmySales userID={userID} />}></Route>
         <Route path='/concurrence' element={<Concurrence/>}></Route>

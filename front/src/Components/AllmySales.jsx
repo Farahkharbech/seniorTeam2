@@ -20,12 +20,14 @@ function AllmySales({userID}) {
   const [discount,setDiscount] = useState(0)
   const [color,setColor] = useState("")
   const [size,setSize] = useState("")
-
+console.log('monji',userID);
 
 
   useEffect(()=>{
     axios.get(`http://localhost:3000/api/products/prodsOfUser/${userID}`)
-    .then(res=>setAllSales(res.data)).catch(err=>console.log(err))
+    .then(res=>{
+      console.log();
+      setAllSales(res.data)}).catch(err=>console.log(err))
 },[refresh])
 
 
@@ -40,7 +42,7 @@ const updated = {
   Size : size
 }
 
-
+console.log('allsalrs',allSales);
 const deleteProd = (id) => {
   axios.delete(`http://localhost:3000/api/products/deleteProd/${id}`)
   .then(res=>setRefresh(!refresh)).catch(err=>console.log(err))
@@ -72,10 +74,10 @@ const updateProd = (id,newData) => {
       <div className='grid grid-cols-3 gap-4 overflow-hidden shadow-sm'>
       {allSales.map((el,i)=>(
         <div key={i} className=''>
-          
+          {console.log('photo',el.ProductImage[0])}
           <div className='w-80 h-72 bg-gray mt-10 flex-wrap'>
           {el.Discount?<div className=' top-full left-0 w-20 rounded h-8 bg-red flex justify-center items-center text-white '>-{el.Discount}%</div>:""}
-          <img className=' w-50 h-52 ml-16 ' src={el.ProductImage} alt=""/>
+          <img className=' w-50 h-52 ml-16 ' src={el.ProductImage[0]} alt=""/>
           
           <div>{el.Availability === "In Stock" ? <h1 className=' font-semibold text-lime-600 my-3' style={{"color": "green"}}> In Stock </h1> :  <h1 className='text-red'> Out of Stock </h1>}</div>
           

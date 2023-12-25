@@ -6,7 +6,7 @@ import axios from 'axios';
 import Footer from './Footer.jsx';
 
 
-const AddForSale = () => {
+const AddForSale = ({userID}) => {
 
    const [image, setImage ] = useState("");
     const [ url, setUrl ] = useState("");
@@ -31,7 +31,8 @@ const AddForSale = () => {
         Discount : discount,
         Color : color,
         Size : size,
-        ProductImage : [url]
+        ProductImage : [url],
+        userUserID:userID
     }
     console.log("prod",prod)
 

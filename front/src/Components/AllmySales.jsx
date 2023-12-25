@@ -8,7 +8,7 @@ import { setRef } from '@mui/material';
 
 
 
-function AllmySales() {
+function AllmySales({userID}) {
   const[allSales,setAllSales]=useState([])
   const [refresh,setRefresh] = useState(false)
   const [show,setShow] = useState(0)
@@ -24,7 +24,7 @@ function AllmySales() {
 
 
   useEffect(()=>{
-    axios.get(`http://localhost:3000/api/products/allProducts`)
+    axios.get(`http://localhost:3000/api/products/prodsOfUser/${userID}`)
     .then(res=>setAllSales(res.data)).catch(err=>console.log(err))
 },[refresh])
 

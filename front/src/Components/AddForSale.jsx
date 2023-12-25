@@ -20,7 +20,7 @@ const AddForSale = () => {
     const [color,setColor] = useState("")
     const [size,setSize] = useState("")
 
- 
+
 
     const prod = {
         Name : name,
@@ -31,8 +31,9 @@ const AddForSale = () => {
         Discount : discount,
         Color : color,
         Size : size,
-        ProductImage : url
+        ProductImage : [url]
     }
+    console.log("prod",prod)
 
 const navigate = useNavigate()
   const addProd = (newProd) => {
@@ -51,7 +52,7 @@ const navigate = useNavigate()
       body: data
       })
       .then(res => res.json())
-      .then(data => {setUrl(data.secure_url)})
+      .then(data => {setUrl(data.secure_url) ;console.log("urldata",data)})
       .catch(err => console.log(err))}
 //***********************/
   return (

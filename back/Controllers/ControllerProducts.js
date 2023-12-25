@@ -20,6 +20,10 @@ module.exports={
       let gp=await Product.findOne({where:{ProductID:req.params.ProductID}})
       res.json(gp)
     },
+    getProdOfUser:async(req,res)=>{
+      let pu=await Product.findAll({where:{userUserID: req.params.UserID}})
+      res.json(pu)
+    },
     deleteProd:async(req,res)=>{
       let de=await Product.destroy({where:{ProductID:req.params.ProductID}})
       res.json(de)

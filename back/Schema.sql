@@ -110,10 +110,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 /*Products*/
 
 INSERT INTO Products (ProductID, Name, Description, Price, Quantity, Rating, Color, Size, Availability, Discount, ProductImage, createdAt, updatedAt, cartCartID, userUserID, categoryCategoryID)
-VALUES (3, 'Men Printed T-Shirt', 'Printed Hooded Neck Cotton CELIO MEN', '56.00', NULL, NULL, NULL, NULL, 'In Stock', NULL, 'https://eveen.pk/cdn/shop/products/image_f0d1d9f9-5299-40d0-987f-5cf898bd6503.jpg?v=1669282988', '2023-12-20 13:12:05', '2023-12-20 13:12:05', NULL, NULL, NULL);
+VALUES (3, 'Men Printed T-Shirt', 'Printed Hooded Neck Cotton CELIO MEN', '56.00', NULL, NULL, NULL, NULL, 'In Stock', NULL, ['https://eveen.pk/cdn/shop/products/image_f0d1d9f9-5299-40d0-987f-5cf898bd6503.jpg?v=1669282988','https://5.imimg.com/data5/SELLER/Default/2022/6/UQ/BI/FF/31943666/mens-tshirt-500x500.jpeg'], '2023-12-20 13:12:05', '2023-12-20 13:12:05', NULL, NULL, NULL);
 
-INSERT INTO Products (ProductID, Name, Description, Price, Quantity, Rating, Color, Size, Availability, Discount, ProductImage, createdAt, updatedAt, cartCartID, userUserID, categoryCategoryID)
-VALUES (4, 'Bag for Women', "Sabyasachi Bag Women\'s Mandala Handbag with Wallet - Multi Checkered", '115.00', NULL, NULL, NULL, NULL, 'In Stock', NULL, 'https://www.vasangini.com/wp-content/uploads/2023/01/Sabyasachi-bag-Womens-Mandala-Handbag-with-Wallet-Multi-Checkered.webp', '2023-12-20 13:13:54', '2023-12-20 13:13:54', NULL, NULL, NULL);
+INSERT INTO Products ( Name, Description, Price, Quantity, Rating, Color, Size, Availability, Discount, ProductImage, createdAt, updatedAt, cartCartID, userUserID, categoryCategoryID)
+VALUES ('Bag for Women', "Sabyasachi Bag Women\'s Mandala Handbag with Wallet - Multi Checkered", '115.00', NULL, NULL, NULL, NULL, 'In Stock', NULL, 'https://www.vasangini.com/wp-content/uploads/2023/01/Sabyasachi-bag-Womens-Mandala-Handbag-with-Wallet-Multi-Checkered.webp', '2023-12-20 13:13:54', '2023-12-20 13:13:54', NULL, NULL, NULL);
 
 INSERT INTO Products (ProductID, Name, Description, Price, Quantity, Rating, Color, Size, Availability, Discount, ProductImage, createdAt, updatedAt, cartCartID, userUserID, categoryCategoryID)
 VALUES (7, 'The North Coat', 'The North Face is well known for its high-quality outdoor jackets. They offer a variety of jackets, including insulated jackets, rain jackets', '305.99', NULL, NULL, NULL, NULL, 'In Stock', '25', 'https://image.s5a.com/is/image/saks/0400013873615?wid=900', '2023-12-20 13:24:58', '2023-12-20 13:24:58', NULL, NULL, NULL);

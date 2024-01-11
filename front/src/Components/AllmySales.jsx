@@ -9,7 +9,7 @@ import AccountDropDown from './AccountDropDown';
 
 
 
-function AllmySales() {
+function AllmySales({userID}) {
   const navigate=useNavigate()
   const[allSales,setAllSales]=useState([])
   const [refresh,setRefresh] = useState(false)
@@ -22,7 +22,6 @@ function AllmySales() {
   const [discount,setDiscount] = useState(0)
   const [color,setColor] = useState("")
   const [size,setSize] = useState("")
-console.log('monji',userID);
 
 
   useEffect(()=>{

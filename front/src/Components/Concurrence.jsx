@@ -35,9 +35,8 @@ useEffect(()=>{
       <div className='w-80 h-72 bg-gray flex justify-center items-center mt-11'>
       <div>
                          
-        <div style={{    'margin-left': '-40%'}} className=' top-full left-0 w-20 rounded h-8 bg-red flex justify-center items-center text-white'>-{el.Discount}%</div>
-        <div style={{'margin-left': '117%',
-    'margin-top': '-30%'}}>
+        <div  className=' top-full left-0 w-20 rounded h-8 bg-red flex justify-center items-center text-white'>-{el.Discount}%</div>
+        <div >
         <div className='bg-white w-12 h-12 rounded-full flex items-center justify-center'><FaRegHeart size={20}/></div> 
         <div className='bg-white w-12 h-12 rounded-full flex items-center justify-center'><MdOutlineRemoveRedEye size={20}/></div>
 

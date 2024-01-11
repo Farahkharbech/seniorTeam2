@@ -24,7 +24,7 @@ useEffect(()=>{
         </div>
            
 
-        {wishes.length&&wishes.map((e,i)=>(
+        {wishes.length && wishes.map((e,i)=>(
                     <div className='mb-20 mt-28 ml-20 shadow-md rounded w-5/6 h-20 bg-white flex items-center justify-center gap-96'>
 
      

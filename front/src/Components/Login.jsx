@@ -50,8 +50,10 @@ import React,{useState} from "react";
                 <div className="flex-col items-start gap-[40px] flex-[0_0_auto] inline-flex relative">
                   <div className="flex-col items-start gap-[8px] flex-[0_0_auto] inline-flex relative">
                     <div className="relative w-fit mt-[-1.00px] opacity-40 font-title-16px-regular font-[number:var(--title-16px-regular-font-weight)] text-text-2 text-[length:var(--title-16px-regular-font-size)] tracking-[var(--title-16px-regular-letter-spacing)] leading-[var(--title-16px-regular-line-height)] whitespace-nowrap [font-style:var(--title-16px-regular-font-style)]">
+                      
                       <input type="text" placeholder="Enter your email" className="w-96 h-9"
                       onChange={(event)=>{setEmail(event.target.value)}}/>
+                      
                     </div>
                   </div>
                   <div className="flex-col items-start gap-[8px] flex-[0_0_auto] inline-flex relative">
